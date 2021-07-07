@@ -6,9 +6,9 @@ import { Image, StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={{ uri: "https://i.imgur.com/TkIrScD.png" }} style={{ width: 305, height: 159 }} />
+      <Image source={{ uri: "https://i.imgur.com/TkIrScD.png" }} style={styles.logo} />
 
-      <Text style={{ color: "tomato", fontSize: 30 }}>HELLO EXPO ^-^</Text>
+      <Text style={styles.instructions}>HELLO EXPO ^-^</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -20,5 +20,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  logo: {
+    width: 305,
+    height: 159,
+    marginBottom: 10,
+  },
+  instructions: {
+    color: "#888",
+    fontSize: 18,
+    marginHorizontal: 15,
   },
 });
